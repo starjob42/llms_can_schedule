@@ -4,8 +4,7 @@ Clean, source-only code for the Phi-3 job-shop-scheduling experiments.
 
 - **Dataset repository:** https://github.com/starjob42/datasetjsp
 - **Code branch:** `code_reproduction`
-- **Checkpoints:** published separately on Hugging Face; add the final model
-  link here once the repository is created.
+- **Hugging Face model:** https://huggingface.co/mideavalwisard/llms-can-schedule
 
 This repository deliberately excludes trained weights, large datasets,
 evaluation outputs, caches, and publication artifacts. The frozen
@@ -74,10 +73,14 @@ experiments/phi3_revision/
 ## Model checkpoints
 
 Checkpoint publication is intentionally separate from this source repository.
-When published, use the exact Hugging Face model identifier and revision in
-the links below, and verify the adapter checksum before evaluation:
+Each public checkpoint is a LoRA adapter and requires the base model
+`microsoft/Phi-3-mini-128k-instruct`; it is not a standalone model.
 
-- 25% (`checkpoint-461`): **to be added**
-- 50% (`checkpoint-922`): **to be added**
-- 75% (`checkpoint-1383`): **to be added**
-- 100% (`checkpoint-1844`): **to be added**
+- 25% (`checkpoint-461`):
+  https://huggingface.co/mideavalwisard/llms-can-schedule/tree/main/checkpoint-461
+- 50% (`checkpoint-922`):
+  https://huggingface.co/mideavalwisard/llms-can-schedule/tree/main/checkpoint-922
+- 75% (`checkpoint-1383`):
+  https://huggingface.co/mideavalwisard/llms-can-schedule/tree/main/checkpoint-1383
+- 100% (`checkpoint-1844`):
+  https://huggingface.co/mideavalwisard/llms-can-schedule/tree/main/checkpoint-1844
