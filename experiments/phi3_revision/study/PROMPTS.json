@@ -1,0 +1,40 @@
+{
+  "prompts": [
+    {
+      "id": "seen_1",
+      "text": "Instruct: Provide a solution schedule for the JSSP problem below, also indicate the makespan.",
+      "seen_in_training": true
+    },
+    {
+      "id": "seen_2",
+      "text": "Task: Provide the steps of a solution for the JSSP problem and determine the makespan.",
+      "seen_in_training": true
+    },
+    {
+      "id": "seen_3",
+      "text": "Command: Give a detailed solution to tackle the JSSP problem, focusing on optimizing the makespan.",
+      "seen_in_training": true
+    },
+    {
+      "id": "unseen_1",
+      "text": "Find a feasible schedule for the following job shop instance with the smallest makespan you can achieve. Report the operation timings and makespan.",
+      "seen_in_training": false
+    },
+    {
+      "id": "unseen_2",
+      "text": "Schedule every operation in the job shop problem below, respecting job order and machine capacity. Give the schedule and its makespan, aiming to minimize completion time.",
+      "seen_in_training": false
+    },
+    {
+      "id": "unseen_3",
+      "text": "Produce a job shop schedule for this instance. Minimize the makespan while satisfying every precedence and machine constraint, and report operation start and end times and makespan.",
+      "seen_in_training": false
+    },
+    {
+      "id": "unseen_4",
+      "text": "Solve the scheduling instance below: assign valid times to all operations, seek a low makespan, and provide the schedule together with its makespan.",
+      "seen_in_training": false
+    }
+  ],
+  "system_prompt": "You are an expert in Job Shop Scheduling Problem"
+}
